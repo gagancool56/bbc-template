@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style1.css">
+  <script type="text/javascript">
+	$(document).ready(function(){
+		$("#dbmenu").click(function(){
+			$(".navbar-nav,.custom-nav,.sm-screen").toggleClass("whitebg");
+			$("#db-item").slideToggle("slow");
+		});
+		$("#edit").click(function(){
+			$("#wr").slideToggle();
+            $(this).text($(this).text() == 'Edit' ? 'Close' : 'Edit');
+		});
+	});
+</script>
+</head>
+
+<body>
+	<!--Navbar Section-->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark	">
+		<div class="container-fluid custom-nav">
+		  <a class="navbar-brand logo" href="#">
+		  	<img src="images/logo.png" height="28px" width="95px" style="margin-bottom: 6px;"></a>
+		  	<div class="signin"> 
+		  		<a href="#"><i class="fa fa-user-circle-o" aria-hidden="true" style="font-size: 1rem;"></i><span> Sign in</span></a>
+			  </div>
+			  <div class="sm-screen">
+				<div style="float:left;border-right: 1px solid #fff;height:100% ;padding:10px;"><a href="#"><i class="fa fa-user-circle-o"></i></a> </div>
+				<div style="float:left;border-right: 1px solid #fff;height:100% ;padding:10px;"><b>Home</b></div>
+			  <div style="float:left;border-right: 1px solid #fff;height:100% ;padding:10px;"><b>News</b></div>
+			  <div class="more" id="dbmenu" style="float:left;border-right: 1px solid #fff;height:100% ;padding:10px;">More<a href="#"><i class="fa fa-caret-down" style="margin-left:15px"></i></a></div>
+				<div style="float:left;border-right: 1px solid #fff;height:100% ;padding:10px;"><a href="#"><i class="fa fa-search"></i></a> </div>
+			</div>
+		 <div class="xl-screen">
+		  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+		    <ul class="navbar-nav">
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Home</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">News</a>
+			  </li>
+			 
+				<li class="nav-item">
+					<a class="nav-link" href="#">Sport</a>
+				</li>   
+				<li class="nav-item">
+					<a class="nav-link" href="#">Reel</a>
+				</li> 
+				<li class="nav-item">
+					<a class="nav-link" href="#">Worklife</a>
+				</li> 
+				<li class="nav-item">
+					<a class="nav-link" href="#">Travel</a>
+				</li>  
+				<li class="nav-item">
+					<a class="nav-link" href="#">Future</a>
+				</li> 
+				<li class="nav-item">
+					<a class="nav-link" href="#">Culture</a>
+				</li> 
+			  <li class="nav-item " >
+					<div class="more" id="dbmenu">
+							<div class="row">
+								<div class="col">
+									<div class="nav-link"><span>More</span></div>
+								</div>
+								<div class="col">
+											<div class="nav-link">
+													<span><div class="dropdown-toggle float-right" data-toggle="dropdown"></div></span>
+											</div>
+								</div>
+							</div>
+					</div>
+			  </li> 
+		    </ul>
+		  </div> 
+		</div>
+		  <div class="input-group" id="searchid">
+                <input type="text" class="form-control" placeholder="Search">
+                  <button class="btn" type="submit">
+                    <i class="fa fa-search"></i>
+				  </button>
+            </div>
+	  </div>
+	</nav>
+		<div id="db-item">
+			<div id="db-panel">
+				<ul><li class="db-title"><h3 style="display: inline;">MORE</h3></li></ul>
+				<ul class="db-list">
+					<li>Music</li>
+					<li>TV</li>
+					<li>Weather</li>
+					<li>Sounds	</li>
+				</ul>
+			</div>
+		</div>	
+	<!--welcom to BBC title-->
+		<div class="container-fluid bbc-title">
+			<div class="row">
+				<div class="col">
+					<h5><b>Welcome to BBC.com</b></h5>
+				</div>
+				<div class="col">
+						<h5 style="color:gray" class="float-right">Thursday,17 December</h5>
+				</div>
+			</div>
+		</div>
+	<!--Promo News content-->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6">
+			  <div class="mainimgcontainer">
+				<img src="images/flight.jpg" alt="flight" width="100%" height="357.5px">
+				<div class="maintextcontainer">
+				  <p style="font-size:2rem;margin-bottom: 0;">Plane crashes in USA 2019 AF trump</p>
+				  <p>The report covers the on-scene part of the investigation, using witness testimony and data recording from the cockpit to put together initial pieces of the crash.
+				  <h6 style="border-left:3px solid red;padding-left: 5px;"> US & Canada</h6></p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-sm-6">
+			  <div class="row "  style="margin-bottom:20px;">
+				<div class="col-sm-6">
+					<div class="imgcontainer">
+						<img src="images/cab.jpg" alt="flight" width="100%" height="168.75px">
+						<div class="textcontainer">
+						  <h5>What does the student uprising tell us about india?</h5>
+						  <h6 style="border-left:3px solid red;padding-left: 5px;"> INDIA</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="imgcontainer">
+						<img src="images/modi.jpg" alt="flight" width="100%" height="168.75px">
+						<div class="textcontainer">
+						  <h5>India PM Modi defiant over citizenship law protest</h5>
+						  <h6 style="border-left:3px solid red;padding-left: 5px;"> INDIA</h6>
+						</div>
+					</div>
+				</div>
+			  </div>
+			  <div class="row ">
+				  <div class="col-sm-6">
+					  <div class="imgcontainer">
+						  <img src="images/japan.jpg" alt="flight"width="100%" height="168.75px">
+						  <div class="textcontainer">
+							<h5>El Clasico will go ahead-Zidane</h5>
+							<h6 style="border-left:3px solid red;padding-left: 5px;"> JAPAN</h6>
+						  </div>
+					  </div>
+				  </div>
+				  <div class="col-sm-6">
+					  <div class="imgcontainer">
+						  <img src="images/me_camera.jpg" alt="flight" width="100%" height="168.75px">
+						  <div class="textcontainer">
+							<h5>Me, my camera, my brother... our cancer</h5>
+							<h6 style="border-left:3px solid red;padding-left: 5px;"> STORIES</h6>
+						  </div>
+					  </div>
+				  </div>
+			  </div>
+			</div>
+		  </div>
+	</div>
+	<!--News section-->
+		<!--news title-->
+		<div class="container-fluid">
+			<div class="news-title">
+				<h4 style="font-weight: bold;border-left:5px solid red;padding:0 0 0 5px;"> News</h4>
+			</div>	
+		</div>
+	<!--News media-->
+	<div class="container-fluid news">
+		<div class="row">
+			<div class="col-sm-4">
+					<div class="card" style="width: 100%">
+							<img class="card-img-top" src="images/trump.jpeg" alt="Card image cap" style="width:100%;height: 222.97px;">
+							<div class="card-body">
+									<h4 class="card-title">Trump -how  did we get here? </h4>
+							<p class="card-text">	
+								Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<h6 style="border-left:3px solid red;padding-left: 5px;"> US & CANADA</h6>
+							</div>
+					 </div>
+			</div>
+			<div class="col-sm-4">
+					<div class="card" style="width: 100%">
+							<img class="card-img-top" src="images/hot.jpg" alt="Card image cap" style="width:100%;">
+							<div class="card-body">
+									<h4 class="card-title">Australia endures hottest day </h4>
+							<p class="card-text">	
+								Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<h6 style="border-left:3px solid red;padding-left: 5px;"> US & CANADA</h6>
+							</div>
+					 </div>
+			</div>
+			<div class="col-sm-4">
+					<div class="card" style="width: 100%">
+							<img class="card-img-top" src="images/cancer.jpeg" alt="Card image cap" style="width:100%;height: 222.97px;">
+							<div class="card-body">
+									<h4 class="card-title">Effectives chemotherapy </h4>
+							<p class="card-text">
+								Ahead of the US House of Representatives vote on impeachement, moments from the inquiry </p>
+								<h6 style="border-left:3px solid red;padding-left: 5px;"> US & CANADA</h6>
+							</div>
+					 </div>
+			</div>
+				
+		</div>
+	</div>
+
+	<!--sport section-->
+		<!--sport title-->
+		<div class="container-fluid">
+				<div class="news-title">
+					<h4 style="font-weight: bold;border-left:5px solid yellow;padding:0 0 0 5px;"> Sport</h4>
+				</div>	
+			</div>
+		<!--sport media-->
+		<div class="container-fluid sport">
+			<div class="row">
+					<div class="col-sm-4">
+							<div class="card" style="width: 100%">
+									<img class="card-img-top" src="images/sport1.jpg" alt="Card image cap" style="width:100%;">
+									<div class="card-body">
+											<h4 class="card-title">Villa Liverpool's youngest-ever team </h4>
+									<p class="card-text">
+										<p>Aston Villa overwhelm Liverpool's youngest-ever starting line-up 5-0 at Villa Park to cruise into the semi-finals of the Carabao Cup.</p>
+										<h6 style="border-left:3px solid yellow;padding-left: 5px;">FOOTBALL</h6>
+									</div>
+							 </div>
+					</div>
+					<div class="col-sm-4">
+							<div class="card" style="width: 100%">
+									<img class="card-img-top" src="images/sport2.jpg" alt="Card image cap" style="width:100%;">
+									<div class="card-body">
+											<h4 class="card-title">Serie A apologises for monkey imagery </h4>
+									<p class="card-text">
+										Serie A chief executive Luigi De Siervo apologises after imagery of monkeys is used in artwork for an anti-racism campaign. </p>
+										<h6 style="border-left:3px solid yellow;padding-left: 5px;">EUROPEAN FOOTBALL</h6>
+									</div>
+							 </div>
+					</div>
+					<div class="col-sm-4">
+							<div class="card" style="width: 100%">
+									<img class="card-img-top" src="images/sport3.jpg" alt="Card image cap" style="width:100%;">
+									<div class="card-body">
+											<h4 class="card-title">Fury welcomes Joshua sparring offer</h4>
+									<p class="card-text">
+										<p>Tyson Fury says he would "love" to spar with fellow Briton Anthony Joshua in the build-up to his rematch with Deontay Wilder. </p>
+										<h6 style="border-left:3px solid yellow;padding-left: 5px;">BOXING</h6>
+									</div>
+							 </div>
+					</div>
+			</div>
+		</div>
+	<!--weather report-->
+		<div class="container-fluid">
+			<div class="weather">
+				<h4 style="display: inline;">Mumbai Weather</h4>
+				<button type="btn btn-default" id="edit" value="Edit" onclick="myedit(this.value)">Edit</button>
+
+					<!--search box-->
+					<div id="wr">
+						<div class="input-group input-weather">
+							<input type="text" class="form-control" placeholder="Enter city,town or region">
+							  <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+					   </div>
+					</div>
+				
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="temp-container">
+			<div class="row">
+				<div class="col">
+					<div class="media">
+							<img src="images/sun.png" alt="sun" class="rounded-circle" style="width:80px;">
+							<div class="media-body">
+							<p class="day">TUE</p>
+							<p class="high">32<sup>0</sup></p>
+							<p class="low">21<sup>0</sup></p>
+						    </div>
+					</div>
+				</div>
+				<div class="col">
+						<div class="media">
+								<img src="images/sun.png" alt="sun" class="rounded-circle" style="width:80px;">
+								<div class="media-body">
+								<p class="day">TUE</p>
+								<p class="high">32<sup>0</sup></p>
+								<p class="low">21<sup>0</sup></p>
+								</div>
+						</div>
+					</div>
+					<div class="col">
+							<div class="media">
+									<img src="images/sun.png" alt="sun" class="rounded-circle" style="width:80px;">
+									<div class="media-body">
+									<p class="day">TUE</p>
+									<p class="high">32<sup>0</sup></p>
+									<p class="low">21<sup>0</sup></p>
+									</div>
+							</div>
+						</div>
+						<div class="col">
+								<div class="media">
+										<img src="images/sun.png" alt="sun" class="rounded-circle" style="width:80px;">
+										<div class="media-body">
+										<p class="day">TUE</p>
+										<p class="high">32<sup>0</sup></p>
+										<p class="low">21<sup>0</sup></p>
+										</div>
+								</div>
+							</div>
+			</div>
+		</div>
+		</div>
+		<!--BBC reel-->
+		<div class="container-fluid bbcreel">
+				<span><h5>B</h5><h5>B</h5><h5>C</h5><h4>REEL</h4></span>
+				<h6 style="display:block;color: #fff;">The new home for BBC video content</h6>
+				<div class="row bbcmargin">
+					<div class="col-sm-4">
+							<div class="card" style="width: 100%">
+									<img class="card-img-top" src="images/reel1.jpeg" alt="Card image cap" style="width:100%;">
+									<div class="card-body">
+											<h2>The hidden Nazi tunnels saving wildlife</h2>
+									</div>
+							 </div>
+					</div>
+					<div class="col-sm-4">
+							<div class="card" style="width: 100%">
+									<img class="card-img-top" src="images/reel2.jpeg" alt="Card image cap" style="width:100%;">
+									<div class="card-body">
+											<h2>The $17.7bn industry changing the face of China</h2>
+									</div>
+							 </div>
+					</div>
+					<div class="col-sm-4">
+							<div class="card" style="width: 100%">
+									<img class="card-img-top" src="images/reel3.jpeg" alt="Card image cap" style="width:100%;">
+									<div class="card-body">
+											<h2>Four Japanese rules to live past 100</h2>
+									</div>
+							 </div>
+					</div>
+				</div>
+		</div>
+
+		<!--India news-->
+		<div class="container-fluid india-news">
+				<h4 style="border-left:5px solid red;">India News</h4>
+				<div class="row">
+					<div class="col-sm-3">
+							<div class="card" style="width: 100%">
+									<img class="card-img-top" src="images/in1.jpeg" alt="Card image cap" style="width:100%;">
+									<div class="card-body">
+											<h4>Violence in Delhi over India citizenship law</h4>
+											<p class="card-text"> The latest protest in the Indian capital saw stone-throwing crowds confront police officers.</p>
+											<h6 style="border-left:3px solid red;padding-left:10px;">INDIA</h6>
+									</div>
+							 </div>
+					</div>
+					<div class="col-sm-3">
+							<div class="card" style="width: 100%">
+									<img class="card-img-top" src="images/in2.jpeg" alt="Card image cap" style="width:100%;">
+									<div class="card-body">
+											<h4>'A policeman just shot me' at Protest</h4>
+								<p class="card-text">The BBC speaks to a man who says Indian police shot him as he was passing by a protest. </p>
+								<h6 style="border-left:3px solid red;padding-left:10px;">AFRICA</h6>
+									</div>
+							 </div>
+					</div>
+					<div class="col-sm-3">
+							<div class="card" style="width: 100%">
+									<img class="card-img-top" src="images/in3.jpeg" alt="Card image cap" style="width:100%;">
+									<div class="card-body">
+											<h4> India school defends  mosque demolition </h4>
+											<p class="card-text">School officials say that they were trying to promote national "pride" among the students. </p>
+											<h6 style="border-left:3px solid red;padding-left:10px;">INDIA</h6>
+									</div>
+							 </div>
+					</div>
+					<div class="col-sm-3">
+							<div class="card" style="width: 100%">
+									<img class="card-img-top" src="images/in4.jpeg" alt="Card image cap" style="width:100%;">
+									<div class="card-body">
+											<h4>'We just wanted to protect our friend' </h4>
+								<p>A group of women went viral after forming a human shield to stop Indian police beating their friend.</p>
+								<h6 style="border-left:3px solid red;padding-left:10px;">INDIA</h6>
+									</div>
+							 </div>
+					</div>
+				  </div>
+			  </div>
+
+ <!--Editor's Picks-->
+  	<div class="container-fluid editor">
+        <h4 style="border-left:5px solid red;padding-left:10px;">Editor's Pick</h4>
+          <div class="row">
+                  <div class="col-sm-8">
+					  <div class="editmain">
+						<div class="card" style="width: 100%">
+								<img class="card-img-top" src="images/worklife.jpeg" alt="Card image cap" style="width:100%;height:400px ;">
+								<div class="card-body">
+										<h4>The new trend upending China's cosmetic surgery taboo </h4>
+										<h6 style="border-left:3px solid red;padding-left:10px;">INDIA</h6>
+								</div>
+						 </div>
+						</div>
+                      <div class="row">
+                        <div class="col-sm-4">
+								<div class="card" style="width: 100%">
+										<img class="card-img-top" src="images/ed1.jpeg" alt="Card image cap" style="width:100%;">
+										<div class="card-body">
+												<h4>How to hack the human heart</h4>
+												<p class="card-text">Implantable devices could soon replace medication to treat a range of diseases</p>
+												<h6 style="border-left:3px solid red;padding-left:10px;">INDIA</h6>
+										</div>
+								 </div>
+                        </div>
+                        <div class="col-sm-4">
+								<div class="card" style="width: 100%">
+										<img class="card-img-top" src="images/ed2.jpeg" alt="Card image cap" style="width:100%;">
+										<div class="card-body">
+												<h4>Three hacks to boost your self-control</h4>
+												<p class="card-text">The selfless, future-oriented task to lorem inpsum help achieve your goals</p>
+												<h6 style="border-left:3px solid red;padding-left:10px;">INDIA</h6>
+										</div>
+								 </div>
+                        </div>
+                        <div class="col-sm-4">
+								<div class="card" style="width: 100%">
+										<img class="card-img-top" src="images/ed3.jpeg" alt="Card image cap" style="width:100%;">
+										<div class="card-body">
+												<h4>A dumpling tracing back to Genghis</h4>
+												<p class="card-text">Tracing this dumpling’s origin means confronting some powerful national myths</p>
+												<h6 style="border-left:3px solid red;padding-left:10px;">INDIA</h6>
+										</div>
+								 </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-4">
+								<div class="card" style="width: 100%">
+										<img class="card-img-top" src="images/ed4.jpeg" alt="Card image cap" style="width:100%;">
+										<div class="card-body">
+												<h4>Glitter stink bomb 2.0 to deter 'porch pirates'</h4>
+												<p class="card-text">The parcel explodes, emits an unpleasant smell and captures video of the thief</p>
+												<h6 style="border-left:3px solid red;padding-left:10px;">INDIA</h6>
+										</div>
+								 </div>
+                          </div>
+                          <div class="col-sm-4">
+								<div class="card" style="width: 100%">
+										<img class="card-img-top" src="images/ed5.jpeg" alt="Card image cap" style="width:100%;">
+										<div class="card-body">
+												<h4>DNA from Stone Age woman 6,000 years</h4>
+												<p class="card-text">What tooth marks from a piece of "ancient" lorem inpsum chewing gum can tell us</p>
+												<h6 style="border-left:3px solid red;padding-left:10px;">INDIA</h6>
+										</div>
+								 </div>
+                          </div>
+                          <div class="col-sm-4">
+                        
+									<div class="card" style="width: 100%">
+											<img class="card-img-top" src="images/ed6.jpeg" alt="Card image cap" style="width:100%;">
+											<div class="card-body">
+													<h4>Japan's workplaces 'drinking with boss' </h4>
+													<p class="card-text">Concerns over power have prompted Japanese companies to scale back a long tradition of...  </p>
+													<h6 style="border-left:3px solid red;padding-left:10px;">INDIA</h6>
+											</div>
+									 </div>    
+                          </div>
+                        </div>
+                  </div>
+                  <!--LATEST BUSINESS NEWS-->
+                  <div class="col-sm-4">
+				 <div class="latestb">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <h4 style="background:red;padding: 10px;color: #fff;margin-bottom: 0;">LATEST BUSINESS NEWS</h4>
+                      </div>
+                    </div>
+                    <div class="stripe">
+                      <div class="row">
+							<div class="media">
+									<div class="dot">1</div>
+									<div class="media-body">
+										<div class="media-heading">
+										<h5> Washing machine danger revealed as recall launched</h5>
+										</div>
+									</div>
+							</div>
+                      </div>
+					</div>
+					<div class="stripe">
+							<div class="row">
+								  <div class="media">
+										  <div class="dot">2</div>
+										  <div class="media-body">
+											  <div class="media-heading">
+											  <h5> Washing machine danger revealed as recall launched</h5>
+											  </div>
+										  </div>
+								  </div>
+							</div>
+						  </div>
+						  <div class="stripe">
+								<div class="row">
+									  <div class="media">
+											  <div class="dot">3</div>
+											  <div class="media-body">
+												  <div class="media-heading">
+												  <h5> Washing machine danger revealed as recall launched</h5>
+												  </div>
+											  </div>
+									  </div>
+								</div>
+							  </div>
+							  <div class="stripe">
+									<div class="row">
+										  <div class="media">
+												  <div class="dot">4</div>
+												  <div class="media-body">
+													  <div class="media-heading">
+													  <h5> Washing machine danger revealed as recall launched</h5>
+													  </div>
+												  </div>
+										  </div>
+									</div>
+								  </div>
+								  <div class="stripe">
+										<div class="row">
+											  <div class="media">
+													  <div class="dot">5</div>
+													  <div class="media-body">
+														  <div class="media-heading">
+														  <h5> Washing machine danger revealed as recall launched</h5>
+														  </div>
+													  </div>
+											  </div>
+										</div>
+									  </div>
+                    
+                  </div>
+		  </div>
+		  </div>
+  	</div>
+		  <div class="container-fluid">
+          <div class="row">
+              <div class="col-sm-6">
+				<h4>TIME HACKERS</h4>
+				<div class="card" style="width: 100%">
+						<img class="card-img-top" src="images/timehacker.jpeg" alt="Card image cap" style="width:100%;height:400px;">
+						<div class="card-body">
+							<h6 style="border-left:3px solid red;padding-left:10px;">WORK LIFE</h6>
+                          <h4>why Spain should replace its siesta culture</h4>
+						</div>
+				 </div>
+        
+              </div>
+              <div class="col-sm-6">
+				  <h4>THE BOSS</h4>
+				<div class="card" style="width: 100%">
+						<img class="card-img-top" src="images/boss.jpg" alt="Card image cap" style="width:100%;height:400px;">
+						<div class="card-body">
+							<h6 style="border-left:3px solid red;padding-left:10px;">BUSINESS</h6>
+                          <h4>How a university dropout built a toy empire</h4>
+						</div>
+				 </div>
+                </div>
+            </div>  
+  		</div>
+
+  <!--Featured video-->
+  <div class="container-fluid">
+		<h4 style="border-left:5px solid red;padding-left:10px;">Featured video</h4>
+		  <iframe width="100%" height="424" src="https://www.youtube.com/embed/rocvhpChBeM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<!--BBC world service-->
+	<div class="container-fluid">
+	  <div class="bbc_world">
+		<P style="font-size: 3vh;margin:0;"> <h4 style="background: red;display: inline;color: #fff;">BBC WORLD SERVICE</h4>
+		<i class="fa fa-volume-up"></i> ON AIR: <b>Outlook</b></P>
+	  </div>
+	</div>
+
+	  <!--More around the BBC-->
+			<div class="container-fluid editor">
+       		 <h4 style="border-left:5px solid skyblue;padding-left:10px;">More around the BBC</h4>
+          <div class="row">
+			   <!--Our Correspondents-->
+			   <div class="col-sm-4">
+				   <div class="ourccr">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <h4 style="background:red;padding: 10px;color: #fff;margin-bottom:0;">FROM OUR CORRESPONDENTS</h4>
+                      </div>
+                    </div>
+                    <div class="mstripe">
+                      <div class="row">
+						<div class="media">
+						<img src="images/bman.jpeg" alt="bman" class="mr-3 mt-3 rounded-circle" style="width:60px;height: 60px;">
+								  <div class="media-body">
+										<p><h5>Pooere London pupils still win race to university</h5>
+									<i> By Sean Coughan</i></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mstripe">
+							<div class="row">
+							  <div class="media">
+							  <img src="images/bman2.jpeg" alt="bman" class="mr-3 mt-3 rounded-circle" style="width:60px;height: 60px;">
+										<div class="media-body">
+											  <p><h5>Washing machine danger revealed as recall launched</h5>
+										  <i> By Sean Coughan</i></p>
+									  </div>
+								  </div>
+							  </div>
+						  </div>
+						  <div class="mstripe">
+								<div class="row">
+								  <div class="media">
+								  <img src="images/bman3.jpeg" alt="bman" class="mr-3 mt-3 rounded-circle" style="width:60px;height: 60px;">
+											<div class="media-body">
+												  <p><h5>Washing machine danger revealed as recall launched</h5>
+											  <i> By Sean Coughan</i></p>
+										  </div>
+									  </div>
+								  </div>
+							  </div>
+							  <div class="mstripe">
+									<div class="row">
+									  <div class="media">
+									  <img src="images/bman.jpeg" alt="bman" class="mr-3 mt-3 rounded-circle" style="width:60px;height: 60px;">
+												<div class="media-body">
+												 <p><h5>Washing machine danger revealed as recall launched</h5>
+												  <i> By Sean Coughan</i></p>
+											  </div>
+										  </div>
+									  </div>
+								  </div>
+								  <div class="mstripe">
+										<div class="row">
+										  <div class="media">
+										  <img src="images/bman2.jpeg" alt="bman" class="mr-3 mt-3 rounded-circle" style="width:60px;height: 60px;">
+													<div class="media-body">
+														  <p><h5>Washing machine danger revealed as recall launched</h5>
+													  <i> By Sean Coughan</i></p>
+												  </div>
+											  </div>
+										  </div>
+									  </div>
+									  <div class="mstripe">
+											<div class="row">
+											  <div class="media">
+											  <img src="images/bman2.jpeg" alt="bman" class="mr-3 mt-3 rounded-circle" style="width:60px;height: 60px;">
+														<div class="media-body">
+															  <p><h5>Washing machine danger revealed as recall launched</h5>
+														  <i> By Sean Coughan</i></p>
+													  </div>
+												  </div>
+											  </div>
+										  </div>
+										  <div class="mstripe">
+												<div class="row">
+												  <div class="media">
+												  <img src="images/bman2.jpeg" alt="bman" class="mr-3 mt-3 rounded-circle" style="width:60px;height: 60px;">
+															<div class="media-body">
+																  <p><h5>Washing machine danger revealed as recall launched</h5>
+															  <i> By Sean Coughan</i></p>
+														  </div>
+													  </div>
+												  </div>
+											  </div>
+											  <div class="mstripe">
+													<div class="row">
+													  <div class="media">
+													  <img src="images/bman2.jpeg" alt="bman" class="mr-3 mt-3 rounded-circle" style="width:60px;height: 60px;">
+																<div class="media-body">
+																	  <p><h5>Washing machine danger revealed as recall launched</h5>
+																  <i> By Sean Coughan</i></p>
+															  </div>
+														  </div>
+													  </div>
+												  </div><div class="mstripe">
+														<div class="row">
+														  <div class="media">
+														  <img src="images/bman2.jpeg" alt="bman" class="mr-3 mt-3 rounded-circle" style="width:60px;height: 60px;">
+																	<div class="media-body">
+																		  <p><h5>Washing machine danger revealed as recall launched</h5>
+																	  <i> By Sean Coughan</i></p>
+																  </div>
+															  </div>
+														  </div>
+													  </div>
+						  
+                    
+				  </div>
+         	 </div>
+                  <div class="col-sm-8">
+						<div class="card" style="width: 100%">
+								<img class="card-img-top" src="images/worklife.jpeg" alt="Card image cap" style="width:100%;height:400px ;">
+								<div class="card-body">
+										<h4>The new trend upending China's cosmetic surgery taboo </h4>
+										<h6 style="border-left:3px solid red;padding-left:10px;">INDIA</h6>
+								</div>
+						 </div>
+                      <div class="row">
+                        <div class="col-sm-4">
+								<div class="card" style="width: 100%">
+										<img class="card-img-top" src="images/ed1.jpeg" alt="Card image cap" style="width:100%;">
+										<div class="card-body">
+												<h4>How to hack the human heart</h4>
+												<p class="card-text">Implantable devices could soon replace medication to treat a range of diseases</p>
+												<h6 style="border-left:3px solid red;padding-left:10px;">INDIA</h6>
+										</div>
+								 </div>
+                        </div>
+                        <div class="col-sm-4">
+								<div class="card" style="width: 100%">
+										<img class="card-img-top" src="images/ed2.jpeg" alt="Card image cap" style="width:100%;">
+										<div class="card-body">
+												<h4>Three hacks to boost your self-control</h4>
+												<p class="card-text">The selfless, future-oriented task to lorem inpsum help achieve your goals</p>
+												<h6 style="border-left:3px solid red;padding-left:10px;">INDIA</h6>
+										</div>
+								 </div>
+                        </div>
+                        <div class="col-sm-4">
+								<div class="card" style="width: 100%">
+										<img class="card-img-top" src="images/ed3.jpeg" alt="Card image cap" style="width:100%;">
+										<div class="card-body">
+												<h4>A dumpling tracing back to Genghis</h4>
+												<p class="card-text">Tracing this dumpling’s origin means confronting some powerful national myths</p>
+												<h6 style="border-left:3px solid red;padding-left:10px;">INDIA</h6>
+										</div>
+								 </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-4">
+								<div class="card" style="width: 100%">
+										<img class="card-img-top" src="images/ed4.jpeg" alt="Card image cap" style="width:100%;">
+										<div class="card-body">
+												<h4>Glitter stink bomb 2.0 to deter 'porch pirates'</h4>
+												<p class="card-text">The parcel explodes, emits an unpleasant smell and captures video of the thief</p>
+												<h6 style="border-left:3px solid red;padding-left:10px;">INDIA</h6>
+										</div>
+								 </div>
+                          </div>
+                          <div class="col-sm-4">
+								<div class="card" style="width: 100%">
+										<img class="card-img-top" src="images/ed5.jpeg" alt="Card image cap" style="width:100%;">
+										<div class="card-body">
+												<h4>DNA from Stone Age woman 6,000 years</h4>
+												<p class="card-text">What tooth marks from a piece of "ancient" lorem inpsum chewing gum can tell us</p>
+												<h6 style="border-left:3px solid red;padding-left:10px;">INDIA</h6>
+										</div>
+								 </div>
+                          </div>
+                          <div class="col-sm-4">
+                        
+									<div class="card" style="width: 100%">
+											<img class="card-img-top" src="images/ed6.jpeg" alt="Card image cap" style="width:100%;">
+											<div class="card-body">
+													<h4>Japan's workplaces 'drinking with boss' </h4>
+													<p class="card-text">Concerns over power have prompted Japanese companies to scale back a long tradition of...  </p>
+													<h6 style="border-left:3px solid red;padding-left:10px;">INDIA</h6>
+											</div>
+									 </div>    
+                          </div>
+                        </div>
+                  </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-6">
+				<h4>TIME HACKERS</h4>
+				<div class="card" style="width: 100%">
+						<img class="card-img-top" src="images/timehacker.jpeg" alt="Card image cap" style="width:100%;height:400px;">
+						<div class="card-body">
+							<h6 style="border-left:3px solid red;padding-left:10px;">WORK LIFE</h6>
+                          <h4>why Spain should replace its siesta culture</h4>
+						</div>
+				 </div>
+        
+              </div>
+              <div class="col-sm-6">
+				  <h4>THE BOSS</h4>
+				<div class="card" style="width: 100%">
+						<img class="card-img-top" src="images/boss.jpg" alt="Card image cap" style="width:100%;height:400px;">
+						<div class="card-body">
+							<h6 style="border-left:3px solid red;padding-left:10px;">BUSINESS</h6>
+                          <h4>How a university dropout built a toy empire</h4>
+						</div>
+				 </div>
+                </div>
+            </div>  
+  </div>
+
+
+  <!--World in pictures-->
+  <div class="container-fluid">
+		<h4 style="border-left:5px solid skyblue;padding-left:10px;">World in pictures</h4>
+	  <div class="row">
+		<div class="col-sm-6">
+		  <div class="imgcontainer">
+			<img src="images/model.jpeg" alt="model" style="width:100%;height:350px;">
+			<div class="textcontainer">
+			  <h2>In pictures: What Is Your London?</h2>
+			  <h5 style="border-left:3px solid skyblue;padding-left:10px;">IN PICTURES</h5>
+			</div>
+		  </div>
+		</div>
+		<div class="col-sm-6">
+			<div class="imgcontainer">
+			  <img src="images/model1.jpeg" alt="model" style="width:100%;height:350px;">
+			  <div class="textcontainer">
+				<h2>In pictures: Zambia's new generation</h2>
+				<h5 style="border-left:3px solid skyblue;padding-left:10px;">IN PICTURES</h5>
+			  </div>
+			</div>
+		  </div>
+	  </div>
+	  <div class="wip_content">
+	  <div class="row">
+		  <div class="col-sm-4">
+				<div class="card" style="width: 100%">
+						<img class="card-img-top" src="images/riseup.jpeg" alt="Card image cap" style="width:100%;height:250px;">
+						<div class="card-body">
+								<h4>In pictures: Women rise up on Baghdad's walls </h4>
+								<p class="card-text">Concerns over power have prompted Japanese companies to scale back a long tradition of...  </p>
+								<h6 style="border-left:3px solid red;padding-left:10px;">MIDDLE EAST</h6>
+						</div>
+				 </div>
+		  </div>
+		  <div class="col-sm-4">
+				<div class="card" style="width: 100%">
+						<img class="card-img-top" src="images/election.jpeg" alt="Card image cap" style="width:100%;height:250px;">
+						<div class="card-body">
+								<h4>General election 2019: The night and morning after in pictures</h4>
+								<p class="card-text">Concerns over power have prompted Japanese companies to scale back a long tradition of...  </p>
+								<h6 style="border-left:3px solid red;padding-left:10px;">IN PICTURES</h6>
+						</div>
+				 </div>
+			</div>
+			<div class="col-sm-4">
+
+					<div class="card" style="width: 100%">
+							<img class="card-img-top" src="images/election.jpeg" alt="Card image cap" style="width:100%;height:250px;">
+							<div class="card-body">
+									<h4>Africa's top shots: Big captures and beauty queens</h4>
+									<p class="card-text">Concerns over power have prompted Japanese companies to scale back a long tradition of...  </p>
+									<h6 style="border-left:3px solid red;padding-left:10px;">AFRICA</h6>
+							</div>
+					 </div>
+			  </div>
+	  </div>
+	  </div>
+	</div>
+
+	<div class="container-fluid bbcbg">
+		<h4>BBC IN OTHER LANGUAGES</h4>
+			<div class="row">
+			  <div class="col-sm-5" style="padding: 0;">
+				<div class="mlang">
+				  <div class="row">
+					<div class="col-sm-3">
+						<h4>Hindi</h4>
+						<p>दोषी अक्षय की पुनर्विचार याचिका ख़ारिज, आगे क्या?</p>
+					</div>
+					<div class="col-sm-3">
+						<h4>Urdu</h4>
+						<p style="text-align: right;">مشرف کو سزائے موت: مارشل لا کا راستہ واقعی رک جا</p>
+						</div>
+					<div class="col-sm-3">
+						<h4>Tamil</h4>
+						<p>நிர்பயா வழக்கு: தூக்குத் தண்டனையை உறுதி செய்தது உச்ச நீதிமன்றம்</p>
+						</div>
+						<div class="col-sm-3">
+						<h4>Marathi</h4>
+						<p>निर्भया प्रकरणात दोषी ठरलेल्या अक्षयची याचिका सुप्रीम कोर्टाने फेटाळली</p>
+						</div>
+					</div>
+				</div>
+			  </div>
+			  <div class="col-sm-7">
+				<h4>More Languages</h4>
+				<div class="olang">
+				<div class="row">
+					<div class="col-sm-3">
+						<ul class="custom_style">
+							<li>Arabic<span> عربي</span></li>
+							<li>Chinese <span>中文网</span></li>
+							<li>Indonesian <span>INDONESIA</span></li>
+							<li>Kyrgyz <span>Кыргыз</span></li>
+							<li>Persian<span> فارسی</span></li>
+							<li>Somali <span>SOMALI</span></li>
+							<li>Turkish <span>TÜRKÇE</span></li>
+							<li>Vietnamese<span>TIẾNG VIỆT</span></li>
+						</ul>
+					</div>
+					<div class="col-sm-3">
+						<ul class="custom_style">
+							<li>Azeri <span>AZƏRBAYCAN</span></li>
+							<li>French<span> AFRIQUE</span></li>
+							<li>Japanese <span>日本語</span></li>
+							<li>Marathi <span>मराठी</span></li>
+							<li>Portuguese <span>BRASIL</span></li>
+							<li>Spanish<span>MUNDO</span> </li>
+							<li>Ukrainian <span>УКРАЇНСЬКA</span></li>
+						</ul>
+					</div>
+					<div class="col-sm-3">
+						<ul class="custom_style">
+							<li>Bangla <span>বাংলা</span></li>
+							<li>Hausa <span>HAUSA</span></li>
+							<li>Kinyarwanda <span>GAHUZA</span></li>
+							<li>Nepali <span>नेपाली</span></li>
+							<li>Russian <span>НА РУССКОМ</span></li>
+							<li>Swahili <span>SWAHILI</span></li>
+							<li>Urdu <span> اردو</span></li>
+						</ul>
+					</div>
+					<div class="col-sm-3">
+						<ul class="custom_style">
+							<li>Burmese <span>မြန်မာ</span></li>
+							<li>Hindi <span>हिन्दी</span></li>
+							<li>Kirundi <span>KIRUNDI</span></li>
+							<li>Pashto <span>پښتو</span></li>
+							<li>Sinhala <span>සිංහල</span></li>
+							<li>Tamil <span>தமிழ்</span></li>
+							<li>Uzbek <span>O'ZBEK</span></li>
+						</ul>
+					</div>
+				</div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="container-fluid exbg">
+			  <div class="mlink-container">
+				<h4>Explore the BBC</h4>
+				<div class="mlink1">
+				<div class="row">
+					
+				  <div class="col-sm-2">
+					<ul class="custom_style">
+					  <li>Home</li>
+					</ul>
+				  </div>
+				  <div class="col-sm-2">
+					  <ul class="custom_style">
+						<li>News</li>
+						
+					  </ul>
+					</div>
+					<div class="col-sm-2">
+						<ul class="custom_style">
+						  <li>Sport</li>
+					
+						</ul>
+					  </div>
+					  <div class="col-sm-2">
+						  <ul class="custom_style">
+							<li>Reel</li>
+							
+						  </ul>
+						</div>
+						<div class="col-sm-2">
+							<ul class="custom_style">
+							  <li>Worklife</li>
+							</ul>
+						  </div>
+						  <div class="col-sm-2">
+							  <ul class="custom_style">
+								<li>Travel</li>
+				
+							  </ul>
+							</div>
+					</div>
+				</div>
+				<div class="mlink2">
+				<div class="row">
+						<div class="col-sm-2">
+						  <ul class="custom_style">
+							
+							<li>Future</li>
+						  </ul>
+						</div>
+						<div class="col-sm-2">
+							<ul class="custom_style">
+							 
+							  <li>Culture</li>
+							</ul>
+						  </div>
+						  <div class="col-sm-2">
+							  <ul class="custom_style">
+								
+								<li>Music</li>
+							  </ul>
+							</div>
+							<div class="col-sm-2">
+								<ul class="custom_style">
+								
+								  <li>TV</li>
+								</ul>
+							  </div>
+							  <div class="col-sm-2">
+								  <ul class="custom_style">
+									
+									<li>Weather</li>
+								  </ul>
+								</div>
+								<div class="col-sm-2">
+									<ul class="custom_style">
+									 
+									  <li>Sounds</li>
+									</ul>
+								  </div>
+						</div>
+					  </div>
+					 
+					</div>
+				
+				
+				<div class="row">
+
+					<ul class="terms">
+						<li>Terms of Use</li>
+						<li>About the BBC</li>
+						<li>Privacy Policy</li>
+						<li>Cookies</li>
+						<li>Accessibility Help</li>
+						<li>Parental Guidance</li>
+						<li>Contact the BBC</li>
+						<li>Get Personalised Newsletters</li>
+						<li>Advertise with us</li>
+						<li>Ad choices</li>
+					</ul>
+				</div>
+					<div class="row">
+						<ul class="terms">
+							<li><b>Copyright &copy 2019 BBC.</b> The BBC is not responsible for the content of external sites.<b> Read about our approach to external linking</b></li>
+						</ul>
+					</div>
+				
+			</div>
+</body>
+</html>

@@ -1,0 +1,576 @@
+/*Navbar style*/
+.custom-nav
+{
+	height: 39.5px;
+}
+.custom-nav a{
+	color:#fff;
+}
+.logo{
+	width: 110px;
+	height: 39.5px;
+	border-right: 1px solid gray;
+}
+.signin{
+	width: 155px;
+	border-right: 1px solid gray;
+	font-size: 0.85rem;
+	font-weight: bold;
+	padding-top:10px;
+	height: 39.5px;
+}
+.whitebg{
+	background:#fff !important;
+	color:black !important;
+}
+.whitebg>.row>.col>.nav-link>a{
+	color:black !important;
+}
+.nav-link{
+	color:#fff !important ;
+}
+.whitebg a{
+	color:black;
+}
+
+.whitebg span{
+	color:black !important;
+}
+.whitebg>.nav-item>a{
+	color:black !important;
+}
+.bg-dark{
+	background: black !important;
+	padding: 0;
+} 
+.nav-item{
+	border-right: 1px solid gray;
+	padding: 3px 11px 3px 11px;
+	font-size: 13px;
+	font-family: ReithSans, Arial, Helvetica, freesans, sans-serif;
+}
+.nav-item:last-child{
+	margin-right:10px;	
+}
+.nav-item a{
+	color: #fff !important;
+}
+.more{
+	width: 120px;
+}
+.form-control{
+	height: 20px;
+	width: 60	px;
+	border-radius: 0;
+	background: #fff;
+}
+.btn{
+	padding: 0 0 10px 0;
+}
+.input-group{
+	width:200px;
+
+}
+.btn{
+	height: 20px;
+	font-size: 16px;
+	width: 30px;
+	padding-top:0px;
+	background:#fff;
+	border: 0;
+	border-radius: 0;
+	color: black;
+}
+#db-item{
+	height:53.95px;
+	width: 100%;
+	padding:0px 0 50px 0;
+	display:none;
+	border:2px solid pink;
+}
+#db-panel{
+	height:44.97px;
+	margin: 0 0px;
+	padding: 10px 12px;
+}
+.db-title,h3{
+	padding: 0;
+	margin: 0;
+	line-height: 15px;
+	float: left;
+}
+.db-list{
+	margin:0 0 0 0;
+}
+.db-list>ul, li{
+	list-style-type:none;
+	display: inline;
+	padding-left:150px;
+	font-size: 0.85rem;
+	font-weight: bold;
+}
+/*BBC title*/
+.bbc-title{
+	margin:30px 0 10px 0;
+}
+/*main content style*/
+.imgcontainer{
+    position: relative;
+}
+.mainimgcontainer{
+    position: relative;
+}
+.maintextcontainer{
+    position: absolute;
+    bottom:0;
+    left:10px;
+    color:#fff;
+}
+.textcontainer{
+    position: absolute;
+    bottom:0;
+    left:10px;
+    color:#fff;
+}
+/*news section style*/
+.news-title{
+	padding-left:5px;
+	margin-top:50px;
+ }
+/* weather section style*/
+p.high{
+    margin:0;
+    padding: 0;
+    font-size:12px;
+    font-weight:bold;
+}
+p.low{
+    margin:0;
+    padding: 0;
+    font-size:10px;
+}
+p.day{
+    margin:0px;
+    padding: 0;
+    font-size:12px; 
+}
+.weather{
+	margin:50px 0 10px 0;
+	display: block;
+	padding-bottom:10px;
+}
+.weather .form-control{
+	margin-top:5px;
+	width: 200px;
+	font-size:.95rem
+	display:inline;
+}
+.input-weather{
+	border:1px solid #c4d6c9;
+	height: 30px;
+	width: 250px;
+	padding:0;
+	margin;0;
+	margin-bottom:10px;
+
+}
+#wr{
+	display: none;
+	margin-top:10px;
+}
+.weather .form-control{
+	border:0;
+}
+
+.weather .btn{
+	padding:2px;
+
+}
+.temp-container{
+	width: 45%;
+}
+#edit{
+	border:0;
+	font-size:2vh;
+	width: 60px;
+	margin-left:20px;
+	color:gray;
+	padding:5px 10px;
+}
+/*BBC reel*/
+.bbcreel{
+    background-image: linear-gradient(#1a000d,#b30059);
+   padding-top: 50px;
+   padding-bottom: 50px;
+
+}
+.bbcreel img{
+	height: 200px;
+}
+.card-body{
+	padding:5px 0 0 0;
+}
+.card, .card img{
+	border:0px;
+	margin-bottom: 10px;
+	border-radius: 0;
+}
+.bbcreel h5{
+    display: inline;
+    background:#fff;
+    margin-right:5px;
+    padding: 0 5px 0 5px;
+    font-size:32px;
+    font-weight: bold;
+}
+.bbcreel h4{
+    display: inline;
+    color:#fff;
+    font-size: xx-large;
+}
+/*india-news*/
+.india-news{
+	margin-top:30px;
+}
+.india-news img{
+	height: 200px;
+}
+/*Editor's picks*/
+
+.editor{
+	background:#f2f2f2;
+	padding-top: 30px;
+	padding-bottom:30px;
+	margin-top:30px;
+}
+.editor .card-body{
+	padding:8px;
+}
+.editor img{
+	height: 200px;
+}
+/*Lates bussines side bar*/
+.stripe{
+    background: #3b434a ;
+    color: #fff;
+    padding:40px;
+}
+.stripe:nth-child(odd){
+    background:#2a3036;
+}
+.dot{
+	padding:5px 15px;  
+	margin-right:10px;
+    background-color: red;
+    color:#fff;
+    border-radius:50%;
+    font-size:4vh;
+  }
+  /*BBC world*/
+  .bbc_world{
+    margin: 20px 0;
+    background:#3b434a ;
+    padding:0;
+    color:#fff;
+}
+/*More around BBC*/
+.mstripe{
+    background: #3b434a ;
+    color: #fff;
+    padding:10px 40px;
+}
+.mstripe:nth-child(odd){
+    background:#2a3036;
+}
+.wip_content{
+	margin-top:20px;
+	width: 100%;
+}
+/*Footer styling*/
+.bbcbg{
+	background: lightgrey;
+	padding: 30px;
+}
+.custom_style li,ul{
+	list-style-type: none;
+	display: block;
+	margin:0;
+	border:0;
+	padding:0;
+}
+.exbg{
+	background:#383736;
+	color: #fff;
+	padding-top:30px;
+}
+.exbg .col-sm-2{
+	border-right:1px solid #fff;
+}
+.exbg .col-sm-2:last-child{
+	border:0;
+}
+.terms{
+	padding:10px;
+}
+.terms li{
+	display: inline;
+	border:0;
+	margin:5px;
+	padding:0;
+
+}
+.mlang,.olang,.mlink-container{
+	width: 100%;
+}
+.mlink-container{
+	border-bottom: 1px solid #fff;
+	padding-bottom:10px;
+	height: 150px;
+}
+.sm-screen{
+		display:none;
+}
+							/*media screen edit start*/
+
+@media screen and (max-width:400px){
+	.xl-screen{
+		display: none;
+	}
+	#db-item{
+		height:140px;
+	}
+	.db-list{
+		width: 100%;
+		margin-top:40px;
+	}
+	.db-list li{
+		width: 50%;
+		float:left;
+		font-size:3vw;
+		text-align: left;
+		padding: 10px;
+	}
+	.navbar-brand{
+		margin-right:0;
+	}
+	.sm-screen{
+		display:inline;
+		height: 39.31px;
+		width:281px;
+		color:#fff;
+		font-size: 4vw;;
+	}
+	.logo{
+		width: 100px;
+
+	}
+	.signin{
+		width:30vh;
+		display:none;
+	}
+	
+
+    .imgcontainer {
+        margin-bottom:20px;
+	}
+	.textcontainer{
+		position: relative;
+		color:black;
+		width: 100%;
+		padding:5px;
+		border-bottom:1px solid gray;
+	}
+	.imgcontainer img{
+		display:none;
+	}
+	.caption-heading h3{
+		font-size:6vw;
+	}
+	.signin{
+        width:30vh;
+	}
+	.dot{
+        padding:5px 15px;  
+      }
+      .stripe h5{
+          font-size:3vh;
+	  }
+	  .mstripe h5{
+		font-size:3vh;
+		}
+		.mstripe i{
+			font-size: 2vh;
+		}
+      #searchid{
+          display: none;
+	  }
+	  ul>li{
+        text-align:center;
+        font-size: 2vh;
+		}
+		#collapsibleNavbar{
+			background:black;
+			z-index: 1;
+		}
+		.signin span{
+			display: none;
+		}
+		.more{
+			display: inline;
+			width: 80px;
+		}
+		.news{
+			padding:20px;
+		}
+		 .news .card-img-top{
+			display: none;
+		}
+		.news .card-body h4{
+			font-size:7vh;
+		}
+		.news .card-body{
+			border-bottom:1px solid gray;
+		}
+		.sport{
+			padding:20px;
+		}
+		 .sport .card-img-top{
+			display: none;
+		}
+		.sport .card-body h4{
+			font-size:7vh;
+		}
+		.sport .card-body{
+			border-bottom:1px solid gray;
+		}
+		.temp-container{
+			width:100%;
+		}
+		.temp-container .col{
+			padding:0;
+		}
+		.temp-container .col:last-child{
+			display: none;
+		}
+		.bbcreel h6{
+			font-size:6vh;
+		}
+		.india-news{
+			padding:20px;
+		}
+		 .india-news .card-img-top{
+			display: none;
+		}
+		.india-news .card-body h4{
+			font-size:7vh;
+		}
+		.india-news .card-body{
+			border-bottom:1px solid gray;
+		}
+		#edit{
+			font-size:4vh;
+		}
+		.editor{
+			padding:20px;
+		}
+		 .editor .card-img-top{
+			display: none;
+		}
+		.editor .card-body h4{
+			font-size:7vh;
+		}
+		.editor .card-body{
+			border-bottom:1px solid gray;
+		}
+		.latestb{
+			border:1px solid red;
+		}
+		.stripe{
+			background:#d5deeb;
+			color:black;
+			padding:15px 30px;
+		}
+		.stripe h5{
+			font-size:5vh;
+			padding-top:5px;
+		}
+		.dot{
+			padding:15px 20px;
+		}
+		.stripe:nth-child(odd)
+		{
+			background:#fff;
+		}
+		.bbc_world h4{
+			display: block;
+		}
+		.ourccr{
+			border:1px solid red;
+		}
+		.mstripe{
+			text-align: center;
+			font-size:6vh;
+			color:black;
+			background:#d5deeb;
+			padding: 10px 40px;
+		}
+		.mstripe i{
+			font-size: 4vh;
+		}
+		.mstripe h5{
+			font-size:5vh;
+			padding-top:5px;
+			margin:0;
+		}
+		.mstripe:nth-child(odd)
+		{
+			background:#fff;
+		}
+		.mstripe .media img{
+			display: none;
+		}
+		.mlang .col-sm-3{
+			width: 50%;
+		}
+		.olang .col-sm-3{
+			width: 50%;
+		}
+		.custom_style li,ul{
+			list-style-type: none;
+			display: block;
+			text-align:left;
+			font-size: 4vh;
+			padding: 0;
+		}
+		.mlink1,.mlink2 .custom_style li,ul{
+			padding-left: 5px;
+			
+		}
+		.custom_style span{
+			color:blue;
+		}
+		.mlink1,.mlink2{
+			width:50%;
+			float: left;
+		}
+		.mlink2 li{
+			padding-left: 10px;
+			border-left:1px solid #fff;
+		}
+		.exbg .col-sm-2{
+			border-right:0;
+		}
+		.terms{
+			width:100%;
+		}
+		.terms li{
+			min-width:50%;
+			float: left;
+			margin:0;
+			padding:10px;
+			text-align: left;
+			font-size: 4vh;
+		}
+		
+		
+}
